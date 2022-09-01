@@ -1,0 +1,46 @@
+.lessonFirst {
+    display: flex;
+    position: relative;
+    padding: 50px;
+    margin-top: 80px;
+    background-color: rgb(249,200,105);
+}
+
+.lessonFirst-text {
+    max-width: 45%;
+    text-align: left;
+}
+
+.lessonFirst-text h2 {
+    margin: 0;
+}
+
+.lessonFirst-img {
+    position: absolute;
+    right: 50px;
+    bottom: -3px;
+}
+
+.lessonFirst-img img {
+    width: 650px;
+}
+
+@media screen and (max-width: 1165px) {
+    .lessonFirst-img img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .lessonFirst-img img {
+        display: none;
+    }
+
+    .lessonFirst-text {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

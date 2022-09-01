@@ -1,0 +1,33 @@
+.why {
+    padding: 50px;
+}
+
+.why-content {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+.why-content-column {
+    gap: 20px;
+}
+
+.why-content-img img {
+    width: 100%;
+}
+
+.element h3 {
+    margin: 5px;
+}
+
+.element p {
+    margin: 5px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 910px) {
+    .why-content-img img {
+        display: none;
+    }
+}

@@ -1,0 +1,63 @@
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    max-height: 100px;
+    font-size: 1.2rem;
+    background-color: white;
+    box-shadow: 0 20px 30px 0 rgb(0 0 0 / 10%);
+    padding: 20px 40px;
+    gap: 2vw;
+    z-index: 100;
+}
+
+.logo img {
+    max-height: 55px;
+}
+
+.menu {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    gap: 2vw;
+}
+
+.menu-element {
+    cursor: pointer;
+}
+
+
+.menu-element:hover {
+    color: rgb(249,200,105);
+    transition: .2s ease-in-out;
+}
+
+.menu-element-social {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-element-button {
+    display: block;
+}
+
+.icon {
+    width: 15px;
+    border-radius: 1000px;
+    border: 2px solid rgb(249,200,105);
+    padding: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.icon:hover {
+    background-color: rgb(249,200,105);
+}
+
+@media screen and (max-width: 1030px) {
+    .menu-element-social {
+        display: none;
+    }
+}
