@@ -31,3 +31,14 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .why-content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .element {
+        padding-bottom: 10px;
+    }
+}
