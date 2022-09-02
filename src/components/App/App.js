@@ -6,6 +6,8 @@ import Kids from '../Kids/Kids';
 import Adults from '../Adults/Adults';
 import LessonFirst from '../LessonFirst/LessonFirst';
 import Why from '../Why/Why';
+import LessonSecond from '../LessonSecond/LessonSecond';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Kids/>
       <LessonFirst/>
       <Why/>
+      <LessonSecond/>
+      <Footer/>
     </div>
   );
 }

@@ -60,8 +60,7 @@
     }
 
     .hero {
-        padding-top: 100px; 
-        padding: 30px; 
+        padding: 100px 30px 0 30px; 
     }
 }
 
@@ -71,8 +70,7 @@
     }
 
     .hero {
-        padding-top: 80px;
-        padding: 10px;
+        padding: 80px 10px 0 10px;
     }
 }
 

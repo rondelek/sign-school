@@ -12,7 +12,15 @@ function Header() {
           </div>
           <div className="menu">
             <div className="menu-element">Test poziomujący</div>
-            <div className="menu-element">Kursy</div>
+            <div className="dropdown">
+              <div className="menu-element dropdown-btn">Kursy</div>
+              <div className="dropdown-content">
+                <a className="dropdown-underlined" href="#">Kursy dla młodzieży i dorosłych</a>
+                <a className="dropdown-underlined" href="#">Kursy dla dzieci</a>
+                <a className="dropdown-underlined" href="#">Kursy indywidualne</a>
+                <a href="#">Kursy grupowe</a>
+              </div>
+            </div>
             <div className="menu-element">Cennik</div>
             <div className="menu-element">O nas</div>
             <div className="menu-element">Kontakt</div>
