@@ -8,12 +8,14 @@ import LessonFirst from '../LessonFirst/LessonFirst';
 import Why from '../Why/Why';
 import LessonSecond from '../LessonSecond/LessonSecond';
 import Footer from '../Footer/Footer';
+import Pricing from '../Pricing/Pricing'
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Hero/>
+      <Pricing/>
       <Adults/>
       <Kids/>
       <LessonFirst/>
