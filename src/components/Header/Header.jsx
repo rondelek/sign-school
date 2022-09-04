@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import './Header.css';
 // import 'bulma/css/bulma.css';
 import logo from '../../assets/sign-logo.png';
 import TrialNoArrow from '../Buttons/TrialNoArrow/TrialNoArrow';
 
 function Header() {
+ 
+ const [burgerState, setBurgerState] = useState(1);
+
+    function test() {
+      setBurgerState(0);
+    }
+    function test2() {
+      setBurgerState(1);
+    }
+    
     return (
         <div className="header">
           <div className="logo">
@@ -63,13 +73,23 @@ function Header() {
 
           <nav role="navigation">
             <div id="menuToggle">
-              <input type="checkbox" />
+              <input type="checkbox" onClick={test2} />
               <span></span>
               <span></span>
               <span></span>
+              { burgerState == 1 &&
               <ul id="menu">
                 <a href="#"><li className="menu-element">Test poziomujący</li></a>
-                <a href="#"><li className="menu-element">Kursy</li></a>
+                <div id="menu-courses-hamburger">
+                  <a href="#"><li onClick={test} className="menu-element">Kursy</li></a>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        fill="#525252"
+                        d="M160 115.4L180.7 96 352 256 180.7 416 160 396.7 310.5 256z"
+                        className="fill-000000">
+                      </path>
+                  </svg>
+                </div>
                 <a href="#"><li className="menu-element">Cennik</li></a>
                 <a href="#"><li className="menu-element">O nas</li></a>
                 <a href="#"><li className="menu-element">Kontakt</li></a>
@@ -107,9 +127,10 @@ function Header() {
                   </div></li></a>
                 <TrialNoArrow/>
               </ul>
+}
             </div>
           </nav>
-          
+
         </div>
       //   <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       //     <div class="navbar-brand">
