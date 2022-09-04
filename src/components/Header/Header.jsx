@@ -5,16 +5,17 @@ import logo from '../../assets/sign-logo.png';
 import TrialNoArrow from '../Buttons/TrialNoArrow/TrialNoArrow';
 
 function Header() {
- 
- const [burgerState, setBurgerState] = useState(1);
 
-    function test() {
-      setBurgerState(0);
-    }
-    function test2() {
-      setBurgerState(1);
-    }
-    
+  const [burgerState, setBurgerState] = useState(1);
+
+  function test() {
+    setBurgerState(0);
+  }
+
+  function test2() {
+    setBurgerState(1)
+  }
+
     return (
         <div className="header">
           <div className="logo">
@@ -73,26 +74,47 @@ function Header() {
 
           <nav role="navigation">
             <div id="menuToggle">
-              <input type="checkbox" onClick={test2} />
+              <input type="checkbox" onClick={test2}/>
               <span></span>
               <span></span>
               <span></span>
-              { burgerState == 1 &&
               <ul id="menu">
-                <a href="#"><li className="menu-element">Test poziomujący</li></a>
-                <div id="menu-courses-hamburger">
-                  <a href="#"><li onClick={test} className="menu-element">Kursy</li></a>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path
-                        fill="#525252"
-                        d="M160 115.4L180.7 96 352 256 180.7 416 160 396.7 310.5 256z"
-                        className="fill-000000">
-                      </path>
-                  </svg>
+                {burgerState == 1 &&
+                <div className="hamburger-list">
+                  <a href="#"><li className="menu-element">Test poziomujący</li></a>
+                  <div id="menu-courses-hamburger">
+                    <a href="#"><li className="menu-element" onClick={test}>Kursy</li></a>
+                    <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                          fill="#525252"
+                          d="M160 115.4L180.7 96 352 256 180.7 416 160 396.7 310.5 256z"
+                          className="fill-000000">
+                        </path>
+                    </svg>
+                  </div>
+                  <a href="#"><li className="menu-element">Cennik</li></a>
+                  <a href="#"><li className="menu-element">O nas</li></a>
+                  <a href="#"><li className="menu-element">Kontakt</li></a>
                 </div>
-                <a href="#"><li className="menu-element">Cennik</li></a>
-                <a href="#"><li className="menu-element">O nas</li></a>
-                <a href="#"><li className="menu-element">Kontakt</li></a>
+}
+                {burgerState == 0 &&
+                <div className="hamburger-list">
+                    <a href="#"><li className="back-menu" onClick={test2}>
+                      <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                          fill="#525252"
+                          d="M352 115.4L331.3 96 160 256l171.3 160 20.7-19.3L201.5 256z"
+                          className="fill-000000">
+                        </path>
+                      </svg>
+                      <div>Menu</div>
+                    </li></a>
+                    <a href="#"><li className="menu-element">Kursy dla młodzieży i dorosłych</li></a>
+                    <a href="#"><li className="menu-element">Kursy dla dzieci</li></a>
+                    <a href="#"><li className="menu-element">Kursy indywidualne</li></a>
+                    <a href="#"><li className="menu-element">Kursy grupowe</li></a>
+                </div>
+}
                 <a href="#"><li><div className="menu-element-social-hamburger">
                     <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <path d="M20 3H4C1.8 3 0 4.8 0 7v10c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V7c0-2.2-1.8-4-4-4zm1.6 5.8l-7.9 5.3c-.5.3-1.1.5-1.7.5s-1.2-.2-1.7-.5L2.4 8.8c-.4-.3-.5-.9-.2-1.4.3-.4.9-.5 1.4-.2l7.9 5.3c.3.2.8.2 1.1 0l7.9-5.3c.5-.3 1.1-.2 1.4.3.2.4.1 1-.3 1.3z"></path>
@@ -127,7 +149,7 @@ function Header() {
                   </div></li></a>
                 <TrialNoArrow/>
               </ul>
-}
+
             </div>
           </nav>
 

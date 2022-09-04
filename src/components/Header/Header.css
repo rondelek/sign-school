@@ -50,7 +50,7 @@ nav {
 .icon {
     width: 15px;
     border-radius: 1000px;
-    border: 2px solid rgb(249,200,105);
+    border: 2px solid #f9c869;
     padding: 5px;
     cursor: pointer;
     transition: .2s ease-in-out;
@@ -176,19 +176,17 @@ nav {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-right: auto;
-  width: 300px;
+  width: 350px;
   height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
   background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -196,21 +194,16 @@ nav {
   box-shadow: 0 20px 30px 0 rgb(0 0 0 / 10%);
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s ease-in-out;
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
+/* And let's slide it in from the left */
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
@@ -220,7 +213,7 @@ nav {
   gap: 5px;
 }
 
-#menu-courses-hamburger svg {
+.arrow {
   max-height: 1.5rem;
 }
 
@@ -252,4 +245,51 @@ nav {
     .header {
         justify-content: center;
     }
+}
+
+
+
+.hamburger-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.back-menu {
+  display: flex;
+  align-items: center;
+  opacity: .5;
+}
+
+.burger-element {
+  position: relative;
+}
+
+
+ @-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
