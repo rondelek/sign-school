@@ -8,11 +8,11 @@ function Header() {
 
   const [burgerState, setBurgerState] = useState(1);
 
-  function test() {
+  function showCourses() {
     setBurgerState(0);
   }
 
-  function test2() {
+  function showMenu() {
     setBurgerState(1)
   }
 
@@ -74,7 +74,7 @@ function Header() {
 
           <nav role="navigation">
             <div id="menuToggle">
-              <input type="checkbox" onClick={test2}/>
+              <input type="checkbox" onClick={showMenu}/>
               <span></span>
               <span></span>
               <span></span>
@@ -83,7 +83,7 @@ function Header() {
                 <div className="hamburger-list">
                   <a href="#"><li className="menu-element">Test poziomujący</li></a>
                   <div id="menu-courses-hamburger">
-                    <a href="#"><li className="menu-element" onClick={test}>Kursy</li></a>
+                    <a href="#"><li className="menu-element" onClick={showCourses}>Kursy</li></a>
                     <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
                           fill="#525252"
@@ -99,7 +99,7 @@ function Header() {
 }
                 {burgerState == 0 &&
                 <div className="hamburger-list">
-                    <a href="#"><li className="back-menu" onClick={test2}>
+                    <a href="#"><li className="back-menu" onClick={showMenu}>
                       <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
                           fill="#525252"
