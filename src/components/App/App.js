@@ -11,7 +11,9 @@ import Footer from '../Footer/Footer';
 import Pricing from '../Pricing/Pricing'
 import Form from '../Form/Form';
 
+
 function App() {
+
   return (
     <div className="App">
       <Header/>
