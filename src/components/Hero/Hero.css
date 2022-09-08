@@ -3,8 +3,8 @@
     align-items: flex-end;
     justify-content: space-between;
     background-color: rgb(249,200,105);
-    padding: 100px 30px 0 30px;
-    gap: 80px;
+    padding: 100px 0 0 80px;
+    gap: 0px;
 }
 
 .hero-img {
@@ -12,7 +12,7 @@
 }
 
 .hero-img img {
-    max-width: 100%;
+    max-width: 90%;
     transform: translateY(3px);
 }
 
@@ -20,11 +20,85 @@
     text-align: left;
     align-self: center;
     max-width: 50%;
-    padding: 50px;
+    font-family: 'Poppins';
+    padding: 40px 5px 50px 30px;
 }
 
 .hero-text h1 {
+    font-family: 'Poppins';
+    font-size: 3.8rem;
+    font-weight: 800;
     margin: 2px;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin: 30px 0;
+}
+
+@media screen and (max-width: 1375px) {
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+}
+
+
+@media screen and (max-width: 1225px) {
+    .hero-text h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .hero-text h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .hero-text h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
 }
 
 @media screen and (max-width: 1070px) {
@@ -41,6 +115,7 @@
         max-width: 100%;
         text-align: center;
         align-items: center;
+        margin-right: 80px;
     }
 
     .hero-img {
@@ -50,17 +125,28 @@
     .hero-img img {
         height: auto;
         max-width: 500px;
+        transform: translateX(-20px);
     }
 
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 580px) {
     .hero-img img {
         max-width: 400px;
     }
+}
 
+@media screen and (max-width: 560px) {
     .hero {
-        padding: 100px 30px 0 30px; 
+        padding-left: 50px;
+    }
+
+    .hero-text {
+        margin-right: 50px;
+    }
+
+    .hero-img img {
+        max-width: 390px;
     }
 }
 
@@ -70,7 +156,11 @@
     }
 
     .hero {
-        padding: 80px 10px 0 10px;
+        padding-left: 30px;
+    }
+
+    .hero-text {
+        margin-right: 30px;
     }
 }
 

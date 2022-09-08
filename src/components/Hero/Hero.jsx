@@ -7,9 +7,6 @@ import './Hero.css'
 function Hero() {
     return (
         <div className="hero">
-            <div className="hero-img">
-                <img src={hero} alt="" />
-            </div>
             <div className="hero-text">
                 <h1 className="hero-text-h1">
                     Sign - Szkoła języka angielskiego
@@ -20,6 +17,9 @@ function Hero() {
                 <div className="hero-text-button">
                     <TrialWithArrow/>
                 </div>
+            </div>
+            <div className="hero-img">
+                <img src={hero} alt="" />
             </div>
         </div>
     )

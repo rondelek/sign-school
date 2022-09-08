@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 96%;
     max-height: 100px;
     font-size: 1.2rem;
     background-color: white;
@@ -293,3 +293,5 @@ nav {
     opacity: 1;
   }
 }
+
+
