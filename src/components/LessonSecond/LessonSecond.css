@@ -1,0 +1,27 @@
+.lessonSecond {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9c869;
+    padding: 50px;
+}
+
+.lessonSecond-text-p {
+    display: flex;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.phone svg {
+    max-width: 25px;
+}
+
+.phone-number {
+    color: black;
+}
+
