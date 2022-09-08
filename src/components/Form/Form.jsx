@@ -57,7 +57,7 @@ function Form() {
             </fieldset>
 
             <fieldset>
-                <legend><span className="number">2</span><span>Preferowane terminy</span></legend>
+                <legend><span className="number">2</span><span>Preferowane terminy </span></legend>
                 <label>Preferowane dni zajęć:</label>
                 <div className="choose-box days">
                     <div className="choose">
