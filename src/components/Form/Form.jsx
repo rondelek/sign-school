@@ -16,7 +16,7 @@ function Form() {
 
     return (
 
-        <form>
+        <form className="form">
         
             <h2 className="form-title">Zapisz się na darmową lekcję próbną</h2>
 

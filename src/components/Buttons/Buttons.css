@@ -11,9 +11,13 @@ button {
     cursor: pointer;
 }
 
-.hover-yellow:hover {
+.hover-yellow {
+    color: white;
+}
+
+.hover-yellow-button:hover {
     color: black;
-    background-color: rgb(249,200,105);
+    background-color: rgb(245,197,104);
     transition: .2s ease-in-out;
 }
 
