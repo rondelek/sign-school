@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import './Header.css';
-// import 'bulma/css/bulma.css';
 import logo from '../../assets/sign-logo.png';
 import TrialNoArrow from '../Buttons/TrialNoArrow/TrialNoArrow';
+import Dropdown from "../Dropdown/Dropdown";
 import {Link} from 'react-router-dom';
-// import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 function Header() {
 
@@ -26,17 +25,12 @@ function Header() {
           </div>
           </a>
           <div className="menu">
-            <div className="menu-element">Test poziomujący</div>
-            <div className="dropdown">
-              <div className="menu-element dropdown-btn">Kursy</div>
-              <div className="dropdown-content">
-                <a className="dropdown-underlined" href="#">Kursy dla młodzieży i dorosłych</a>
-                <a className="dropdown-underlined" href="#">Kursy dla dzieci</a>
-                <a className="dropdown-underlined" href="#">Kursy indywidualne</a>
-                <a href="#">Kursy grupowe</a>
-              </div>
+            <div className="menu-element menu-underlined">Test poziomujący</div>
+            <div className="menu-element dropdown-btn">
+              <span>Kursy</span> 
+              <Dropdown/>
             </div>
-            <div className="menu-element">Cennik</div>
+            <Link to="/cennik"><div className="menu-element">Cennik</div></Link>
             <div className="menu-element">O nas</div>
             <div className="menu-element">Kontakt</div>
             <div className="menu-element-social">

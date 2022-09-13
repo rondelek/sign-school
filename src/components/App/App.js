@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main/>}/>
           <Route path="form" element={<Form/>}/>
+          <Route path="cennik" element={<Pricing/>}/>
         </Routes>
       </Router>
       <Footer/>

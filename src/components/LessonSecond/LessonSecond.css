@@ -8,6 +8,7 @@
 
 .lessonSecond-text-p {
     display: flex;
+    max-width: 800px;
 }
 
 .phone {
