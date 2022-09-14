@@ -1,12 +1,18 @@
 import React from "react";
 import './Pricing.css';
+import {motion} from 'framer-motion';
 
 
 function Pricing() {
 
   return (
 
-      <div className="price-table-wrapper">
+      <motion.div 
+        className="price-table-wrapper"
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0, transition: {duration: 0.3}}}
+      >
         <div className="pricing-table table">
           <h2 className="pricing-table__header--media">10 GODZIN</h2>
           <div className="table-content">
@@ -58,7 +64,7 @@ function Pricing() {
             Zapisz się!
           </a>
         </div>
-      </div>
+      </motion.div>
 
   )
 }

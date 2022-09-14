@@ -9,13 +9,22 @@ button {
     padding: 15px 20px;
     /* display: block; */
     cursor: pointer;
+    transition: .5s;
+}
+
+button:hover .arrow {
+    transform: translateX(5px);
+}
+
+button:hover .arrow path {
+    fill: black;
 }
 
 .hover-yellow {
     color: white;
 }
 
-.hover-yellow-button:hover {
+.hover-yellow:hover {
     color: black;
     background-color: rgb(245,197,104);
     transition: .2s ease-in-out;
@@ -35,4 +44,12 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.arrow {
+    transition: .5s;
+}
+
+.arrow path {
+    fill: #f9c869;
 }

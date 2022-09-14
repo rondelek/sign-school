@@ -3,7 +3,7 @@
     align-items: flex-end;
     justify-content: space-between;
     background-color: rgb(249,200,105);
-    padding: 100px 0 0 80px;
+    padding: 100px 0 0 60px;
     gap: 0px;
 }
 
@@ -21,7 +21,7 @@
     align-self: center;
     max-width: 50%;
     font-family: 'Poppins';
-    padding: 40px 5px 50px 30px;
+    padding: 40px 5px 50px 0px;
 }
 
 .hero-text h1 {
@@ -115,7 +115,7 @@
         max-width: 100%;
         text-align: center;
         align-items: center;
-        margin-right: 80px;
+        margin-right: 20px;
     }
 
     .hero-img {

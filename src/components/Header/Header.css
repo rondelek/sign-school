@@ -8,7 +8,7 @@
     font-size: 1.2rem;
     background-color: white;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 10%);
-    padding: 15px 40px;
+    padding: 15px 60px;
     gap: 2vw;
     z-index: 100;
 }
@@ -238,13 +238,13 @@ nav {
 
 /* media */
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1105px) {
     .menu-element-social {
         display: none;
     }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 935px) {
     .menu {
         display: none;
     }
@@ -263,6 +263,7 @@ nav {
 
     .header {
         justify-content: center;
+        padding: 15px 30px;
     }
 }
 
