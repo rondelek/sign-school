@@ -90,7 +90,7 @@ function Header() {
                         </path>
                     </svg>
                   </div>
-                  <a href="#"><li className="menu-element">Cennik</li></a>
+                  <Link to="/cennik"><li className="menu-element">Cennik</li></Link>
                   <a href="#"><li className="menu-element">O nas</li></a>
                   <a href="#"><li className="menu-element">Kontakt</li></a>
                 </div>
