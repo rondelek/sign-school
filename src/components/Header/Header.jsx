@@ -32,7 +32,7 @@ function Header() {
             </div>
             <Link to="/cennik"><div className="menu-element">Cennik</div></Link>
             <div className="menu-element">O nas</div>
-            <div className="menu-element">Kontakt</div>
+            <Link to="/kontakt"><div className="menu-element">Kontakt</div></Link>
             <div className="menu-element-social">
               <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M20 3H4C1.8 3 0 4.8 0 7v10c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V7c0-2.2-1.8-4-4-4zm1.6 5.8l-7.9 5.3c-.5.3-1.1.5-1.7.5s-1.2-.2-1.7-.5L2.4 8.8c-.4-.3-.5-.9-.2-1.4.3-.4.9-.5 1.4-.2l7.9 5.3c.3.2.8.2 1.1 0l7.9-5.3c.5-.3 1.1-.2 1.4.3.2.4.1 1-.3 1.3z"></path>
@@ -77,11 +77,11 @@ function Header() {
               <span></span>
               <span></span>
               <ul id="menu">
-                {burgerState == 1 &&
+                {burgerState === 1 &&
                 <div className="hamburger-list">
-                  <a href="#"><li className="menu-element">Test poziomujący</li></a>
+                  <li className="menu-element">Test poziomujący</li>
                   <div id="menu-courses-hamburger">
-                    <a href="#"><li className="menu-element" onClick={showCourses}>Kursy</li></a>
+                    <li className="menu-element" onClick={showCourses}>Kursy</li>
                     <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
                           fill="#525252"
@@ -91,13 +91,13 @@ function Header() {
                     </svg>
                   </div>
                   <Link to="/cennik"><li className="menu-element">Cennik</li></Link>
-                  <a href="#"><li className="menu-element">O nas</li></a>
-                  <a href="#"><li className="menu-element">Kontakt</li></a>
+                  <li className="menu-element">O nas</li>
+                  <Link to="/kontakt"><li className="menu-element">Kontakt</li></Link>
                 </div>
 }
-                {burgerState == 0 &&
+                {burgerState === 0 &&
                 <div className="hamburger-list">
-                    <a href="#"><li className="back-menu" onClick={showMenu}>
+                    <li className="back-menu" onClick={showMenu}>
                       <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
                           fill="#525252"
@@ -106,14 +106,14 @@ function Header() {
                         </path>
                       </svg>
                       <div>Menu</div>
-                    </li></a>
-                    <a href="#"><li className="menu-element">Kursy dla młodzieży i dorosłych</li></a>
-                    <a href="#"><li className="menu-element">Kursy dla dzieci</li></a>
-                    <a href="#"><li className="menu-element">Kursy indywidualne</li></a>
-                    <a href="#"><li className="menu-element">Kursy grupowe</li></a>
+                    </li>
+                    <li className="menu-element">Kursy dla młodzieży i dorosłych</li>
+                    <li className="menu-element">Kursy dla dzieci</li>
+                    <li className="menu-element">Kursy indywidualne</li>
+                    <li className="menu-element">Kursy grupowe</li>
                 </div>
 }
-                <a href="#"><li><div className="menu-element-social-hamburger">
+                <li><div className="menu-element-social-hamburger">
                     <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <path d="M20 3H4C1.8 3 0 4.8 0 7v10c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V7c0-2.2-1.8-4-4-4zm1.6 5.8l-7.9 5.3c-.5.3-1.1.5-1.7.5s-1.2-.2-1.7-.5L2.4 8.8c-.4-.3-.5-.9-.2-1.4.3-.4.9-.5 1.4-.2l7.9 5.3c.3.2.8.2 1.1 0l7.9-5.3c.5-.3 1.1-.2 1.4.3.2.4.1 1-.3 1.3z"></path>
                     </svg>
@@ -144,7 +144,7 @@ function Header() {
                       <circle cx="41.5" cy="16.4" r="2.9"></circle>
                       <path d="M49 8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7 0-14.5 5.8-14.5 14.5v20.5c0 4.3 1.4 8 4.2 10.7 2.7 2.6 6.3 3.9 10.4 3.9h20.4c4.3 0 7.9-1.4 10.5-3.9 2.7-2.6 4.1-6.3 4.1-10.6V19.3c0-4.2-1.4-7.8-4-10.4zm-.4 31c0 3.1-1.1 5.6-2.9 7.3s-4.3 2.6-7.3 2.6H18c-3 0-5.5-.9-7.3-2.6C8.9 45.4 8 42.9 8 39.8V19.3c0-3 .9-5.5 2.7-7.3 1.7-1.7 4.3-2.6 7.3-2.6h20.6c3 0 5.5.9 7.3 2.7 1.7 1.8 2.7 4.3 2.7 7.2v20.6z"></path>
                     </svg>
-                  </div></li></a>
+                  </div></li>
                 <TrialNoArrow/>
               </ul>
 
