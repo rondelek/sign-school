@@ -1,0 +1,51 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+    margin: 150px 80px 50px 80px;
+    gap: 50px;
+    /* outline: 2px solid red; */
+}
+
+.contact-right {
+    width: 100%;
+    /* outline: 2px solid red; */
+}
+
+.contact-left {
+    height: 100%;
+    align-items: center;
+    /* outline: 2px solid red; */
+}
+
+.contact-left-map {
+    min-width: 500px;
+    height: 100%;
+    border: none;
+    /* outline: 2px solid red; */
+}
+
+.contact-form-title {
+    margin-bottom: 20px;
+}
+
+.contact-form-row {
+    display: flex;
+    flex-direction: column;
+    /* outline: 2px solid red; */
+}
+
+.contact-form-row input,
+.contact-form-row textarea {
+    /* width: 90%; */
+    padding: 15px 10px;
+}
+
+.contact-form-row input:focus,
+.contact-form-row textarea:focus {
+  outline: 1px solid rgb(252, 184, 48);
+}
+
+.contact-form-button {
+    /* padding: 10px 100px; */
+}
