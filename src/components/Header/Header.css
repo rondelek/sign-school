@@ -129,7 +129,7 @@ nav {
   position: absolute;
   height: 100vh;
   top: 40px;
-  left: 50px;
+  left: 30px;
   user-select: none;
   z-index: 1;
 }
@@ -262,8 +262,9 @@ nav {
     }
 
     .header {
+        width: 100%;
         justify-content: center;
-        padding: 15px 30px;
+        padding: 20px 0;
     }
 }
 
