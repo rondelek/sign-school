@@ -49,3 +49,13 @@
 .contact-form-button {
     /* padding: 10px 100px; */
 }
+
+@media screen and (max-width: 935px) {
+    .contact {
+        display: flex;
+    }
+    
+    .contact-left {
+        display: none;
+    }
+}
