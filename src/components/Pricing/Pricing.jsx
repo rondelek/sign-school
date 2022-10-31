@@ -1,6 +1,7 @@
 import React from "react";
 import './Pricing.css';
 import {motion} from 'framer-motion';
+import {Link} from 'react-router-dom';
 
 
 function Pricing() {
@@ -26,9 +27,9 @@ function Pricing() {
               <li>3 raty: 400zł + 400zł + 300 zł </li>
             </ul>
           </div>
-          <a target="_blank" className="pricing-table__button" href="http://www.digimadmedia.com">
+          <Link to="/form"><a target="_blank" className="pricing-table__button" href="http://www.digimadmedia.com">
                 Zapisz się!
-              </a>
+              </a></Link>
         </div>
         <div className="featured-table table">
           <h2 className="pricing-table__header--media">20 GODZIN</h2>
@@ -43,9 +44,9 @@ function Pricing() {
               <li>3 raty: 700zł + 600zł + 600zł</li>
             </ul>
           </div>
-          <a target="_blank" className="pricing-table__button" href="http://www.digimadmedia.com">
+          <Link to="/form"><a target="_blank" className="pricing-table__button" href="http://www.digimadmedia.com">
             Zapisz się!
-          </a>
+          </a></Link>
         </div>
         <div className="pricing-table table">
           <h2 className="pricing-table__header--media">40 GODZIN</h2>
@@ -60,9 +61,9 @@ function Pricing() {
               <li>3 raty: 1200zł + 1100 zł + 1000zł</li>
             </ul>
           </div>
-          <a target="_blank" className="pricing-table__button" href="http://www.digimadmedia.com">
+          <Link to="/form"><a target="_blank" className="pricing-table__button" href="http://www.digimadmedia.com">
             Zapisz się!
-          </a>
+          </a></Link>
         </div>
       </motion.div>
 
