@@ -17,6 +17,11 @@ function Header() {
     setBurgerState(1)
   }
 
+  function unCheck() {
+    let inputCheckbox = document.getElementById("input-checkbox");
+    inputCheckbox.checked = false;
+  }
+
     return (
         <div className="header">
           <a href="/">
@@ -72,14 +77,14 @@ function Header() {
 
           <nav role="navigation">
             <div id="menuToggle">
-              <input type="checkbox" onClick={showMenu}/>
+              <input type="checkbox" id="input-checkbox" onClick={showMenu}/>
               <span></span>
               <span></span>
               <span></span>
               <ul id="menu">
                 {burgerState === 1 &&
                 <div className="hamburger-list">
-                  <li className="menu-element">Test poziomujący</li>
+                  <li className="menu-element" onClick={unCheck}>Test poziomujący</li>
                   <div id="menu-courses-hamburger">
                     <li className="menu-element" onClick={showCourses}>Kursy</li>
                     <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -90,9 +95,9 @@ function Header() {
                         </path>
                     </svg>
                   </div>
-                  <Link to="/cennik"><li className="menu-element">Cennik</li></Link>
-                  <li className="menu-element">O nas</li>
-                  <Link to="/kontakt"><li className="menu-element">Kontakt</li></Link>
+                  <Link to="/cennik"><li className="menu-element" onClick={unCheck}>Cennik</li></Link>
+                  <li className="menu-element" onClick={unCheck}>O nas</li>
+                  <Link to="/kontakt"><li className="menu-element" onClick={unCheck}>Kontakt</li></Link>
                 </div>
 }
                 {burgerState === 0 &&
@@ -107,10 +112,10 @@ function Header() {
                       </svg>
                       <div>Menu</div>
                     </li>
-                    <li className="menu-element">Kursy dla młodzieży i dorosłych</li>
-                    <li className="menu-element">Kursy dla dzieci</li>
-                    <li className="menu-element">Kursy indywidualne</li>
-                    <li className="menu-element">Kursy grupowe</li>
+                    <li className="menu-element" onClick={unCheck}>Kursy dla młodzieży i dorosłych</li>
+                    <li className="menu-element" onClick={unCheck}>Kursy dla dzieci</li>
+                    <li className="menu-element" onClick={unCheck}>Kursy indywidualne</li>
+                    <li className="menu-element" onClick={unCheck}>Kursy grupowe</li>
                 </div>
 }
                 <li><div className="menu-element-social-hamburger">
