@@ -1,14 +1,14 @@
   .form {
     display: flex;
     flex-direction: column;
-    min-width: 550px;
+    min-width: 322px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 40px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 10px 15px 0 rgb(0 0 0 / 5%);
     margin-top: 150px;
-    /* transform: translateY(200px); */
   }
 
 
@@ -135,13 +135,6 @@
     text-align: left;
   }
   
-  @media screen and (min-width: 480px) {
-  
-    form {
-      max-width: 480px;
-    }
-  
-  }
 
 
 .choose input {
@@ -215,8 +208,8 @@ input::placeholder {
   outline: 1px solid rgb(252, 184, 48);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 725px) {
   form {
-    min-width: auto;
+    /* min-width: 0; */
   }
 }
