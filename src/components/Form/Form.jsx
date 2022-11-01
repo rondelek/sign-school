@@ -5,6 +5,11 @@ import Time from "../Time/Time";
 
 function Form() {
 
+    const handleSubmit = e => {
+        e.preventDefault();
+        alert('You have submitted the form.')
+    }
+
     const [timeState, setTimeState] = useState(0);
 
     function deleteTime() {
@@ -22,10 +27,10 @@ function Form() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0, transition: {duration: 0.3}}}
+            onSubmit={handleSubmit}
         >
         
             <h2 className="form-title">Zapisz się na darmową lekcję próbną</h2>
-
             <fieldset>
                 <legend><span className="number">1</span>Poziom języka</legend>
                 <label>Wybierz swój orientacyjny poziom języka (wykonaj <b>test poziomujący</b>):</label>
