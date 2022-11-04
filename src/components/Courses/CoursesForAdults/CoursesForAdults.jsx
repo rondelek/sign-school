@@ -34,7 +34,7 @@ function CoursesForMatura() {
                 <div className="advantage-img">
                     <img src={remote} alt="" />
                 </div>
-                <h3>Moliwość zajęć zdalnych</h3>
+                <h3>Możliwość zajęć zdalnych</h3>
                 <p>Oferujemy zajęcia zdalne, dzięki czemu możesz skutecznie przygotować się do matury, bez względu na to, gdzie przebywasz</p>
             </div>
         </div>
