@@ -16,26 +16,29 @@ function CoursesForMatura() {
 
         <div className="course">
 
-            <div className='advantage'>
-                <div className="advantage-img">
-                    <img src={guarantee} alt="" />
+            <h2>Dlaczego warto przygotować się z nami do <strong>matury z angielskiego</strong>?</h2>
+            <div className="advantages">
+                <div className='advantage'>
+                    <div className="advantage-img">
+                        <img src={guarantee} alt="" />
+                    </div>
+                    <h3>Gwarancja zdanej matury</h3>
+                    <p>100% naszych kursantów zdaje maturę podstawową z języka angielskiego</p>
                 </div>
-                <h3>Gwarancja zdanej matury</h3>
-                <p>100% naszych kursantów zdaje maturę podstawową z języka angielskiego</p>
-            </div>
-            <div className="advantage">
-                <div className="advantage-img">
-                    <img src={graduate} alt="" />
+                <div className="advantage">
+                    <div className="advantage-img">
+                        <img src={graduate} alt="" />
+                    </div>
+                    <h3>Wysoki wynik z matury rozszerzonej</h3>
+                    <p>Nasi kursanci uzyskują wysoki wynik z matury rozszerzonej, co pozwala im dostać się na wymarzone studia</p>
                 </div>
-                <h3>Wysoki wynik z matury rozszerzonej</h3>
-                <p>Nasi kursanci uzyskują wysoki wynik z matury rozszerzonej, co pozwala im dostać się na wymarzone studia</p>
-            </div>
-            <div className='advantage'>
-                <div className="advantage-img">
-                    <img src={remote} alt="" />
+                <div className='advantage'>
+                    <div className="advantage-img">
+                        <img src={remote} alt="" />
+                    </div>
+                    <h3>Możliwość zajęć zdalnych</h3>
+                    <p>Oferujemy zajęcia zdalne, dzięki czemu możesz skutecznie przygotować się do matury, bez względu na to, gdzie przebywasz</p>
                 </div>
-                <h3>Możliwość zajęć zdalnych</h3>
-                <p>Oferujemy zajęcia zdalne, dzięki czemu możesz skutecznie przygotować się do matury, bez względu na to, gdzie przebywasz</p>
             </div>
         </div>
 
