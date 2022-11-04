@@ -46,3 +46,8 @@ a {
     }
 }
 
+@media screen and (max-width: 363px) {
+    .footer {
+        scale: .8;
+    }
+}

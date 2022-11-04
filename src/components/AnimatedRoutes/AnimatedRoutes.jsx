@@ -6,6 +6,7 @@ import Main from '../Main/Main';
 import Pricing from '../Pricing/Pricing'
 import Form from '../Form/Form';
 import Contact from '../Contact/Contact';
+import CoursesForMatura from "../Courses/CoursesForAdults/CoursesForAdults";
 
 
 function AnimatedRoutes() {
@@ -19,6 +20,7 @@ function AnimatedRoutes() {
                 <Route path="form" element={<Form/>}/>
                 <Route path="cennik" element={<Pricing/>}/>
                 <Route path="kontakt" element={<Contact/>}/>
+                <Route path="matura" element={<CoursesForMatura/>}/>
             </Routes>
         </AnimatePresence>
     )
