@@ -116,7 +116,7 @@ function Header() {
                     <li className="menu-element" onClick={unCheck}>Kursy dla młodzieży i dorosłych</li>
                     <li className="menu-element" onClick={unCheck}>Kursy dla dzieci</li>
                     <li className="menu-element" onClick={unCheck}>Kursy indywidualne</li>
-                    <Link to="/matura"><li className="menu-element" onClick={unCheck}>Kursy grupowe</li></Link>
+                    <Link to="/groups"><li className="menu-element" onClick={unCheck}>Kursy grupowe</li></Link>
                 </div>
 }
                 <li><div className="menu-element-social-hamburger">
