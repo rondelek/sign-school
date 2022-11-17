@@ -1,9 +1,21 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-function Test() {
+
+export default function Test(props) {
+
+    const unreadMessages = props.unreadMessages;
+
     return (
-        <h1>Test</h1>
+        <div>
+            {unreadMessages.length > 0 &&
+                <h1>You have {unreadMessages.length} unread messages.</h1>
+}
+        </div>
     )
+
 }
 
-export default Test;
+Test.propTypes = {
+    unreadMessages: PropTypes.array
+  };
